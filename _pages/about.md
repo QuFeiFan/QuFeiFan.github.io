@@ -13,9 +13,6 @@ I completed my bachelor’s degree in Electronic Information Engineering, at the
 
 My current academic interests revolve around the areas of Holography, Computer Graphics, and XR.
 
-You can find my CV [here](files/QU FEIFAN (Mr.) CV.pdf).
-
-
 
 NEWS
 ======
