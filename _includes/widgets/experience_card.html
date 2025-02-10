@@ -36,10 +36,83 @@
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
                                         <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                        <div class="small d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div>{{ item.position1 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date1 }}</em></div>
+                                            </div>
+                                            {% if item.position2 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position2 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date2 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                            {% if item.position3 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position3 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date3 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                            {% if item.position4 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position4 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date4 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                            {% if item.position5 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position5 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date5 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.activity %}
+                    <div class="col-md-6">
+                        <div class="mx-2 my-1">
+                            <h6>Extracurricular Activities</h6>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.activity %}
+                                <li class="media mb-1">
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    <div class="media-body">
+                                        <div>{{ item.name }}</div>
+                                        <div class="small d-flex flex-column">
+                                            <div class="d-flex">
+                                                <div>{{ item.position1 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date1 }}</em></div>
+                                            </div>
+                                            {% if item.position2 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position2 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date2 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                            {% if item.position3 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position3 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date3 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                            {% if item.position4 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position4 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date4 }}</em></div>
+                                            </div>
+                                            {% endif %}
+                                            {% if item.position5 %}
+                                            <div class="d-flex">
+                                                <div>{{ item.position5 }}</div>
+                                                <div class="mt-auto ml-auto no-break"><em>{{ item.date5 }}</em></div>
+                                            </div>
+                                            {% endif %}
                                         </div>
                                     </div>
                                 </li>
@@ -66,8 +139,9 @@
                         </div>
                     </div>
                     {% endif %}
-
                 </div>
+
+                
 
             </div>
         </div>
