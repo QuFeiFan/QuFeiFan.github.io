@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Modeling Off-Axis Diffraction with the Least-Sampling Angular Spectrum Method</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <link href="https://fonts.cdnfonts.com/css/linux-biolinum" rel="stylesheet">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/linux-biolinum');
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Modeling Off-Axis Diffraction with the Least-Sampling Angular Spectrum Method</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://whywww.github.io/" target="_blank">Haoyu Wei</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=lOcrKM0AAAAJ&hl=en" target="_blank">Xin Liu</a><sup>1,2,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.haoxiang.ac.cn/" target="_blank">Xiang Hao</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.eee.hku.hk/~elam/" target="_blank">Edmund Y. Lam</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.eee.hku.hk/~evanpeng/" target="_blank">Yifan (Evan) Peng</a><sup>1</sup></span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>The University of Hong Kong,<sup>2</sup>Zhejiang University<br><b>Optica, Optica Publishing Group, 2023</b></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-10-7-959&id=535343" target="_blank"
+                        class="external-link button is-normal is-rounded button-color">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://opg.optica.org/optica/viewmedia.cfm?uri=optica-10-7-959&seq=s001" target="_blank"
+                      class="external-link button is-normal is-rounded button-color">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/whywww/ASASM" target="_blank"
+                    class="external-link button is-normal is-rounded button-color">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurately yet efficiently simulating off-axis diffraction is vital to design large-scale computational optics, but existing rigid sampling and modeling schemes fail to address this. Herein, we establish a universal least-sampling angular spectrum method that enables efficient off-axis diffraction modeling with high accuracy. Specifically, by employing the Fourier transform’s shifting property to convert off-axis diffraction to quasi-on-axis, and by linking the angular spectrum to the transfer function, essential sampling requirements can be thoroughly optimized and adaptively determined across computation. Leveraging a flexible matrix-based Fourier transform, we demonstrate the off-axis point spread function of exemplary coded-aperture imaging systems. For the first time, to our knowledge, a significant speed boost of around 36× over the state of the art at 20° is demonstrated, and so is the viability of computing ultra-large angles such as 35° within seconds on a commercial computer. The applicability to high-frequency modulation is further investigated.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="hero-body">
+  <div class="container">
+    <div class="item">
+      <img src="static/images/principles.png" alt="MY ALT TEXT" class="abs-image"/>
+      <h2 class="subtitle has-text-centered">
+        Diagram of off-axis diffraction.
+      </h2>
+    </div>
+  </div>
+</div> 
+
+<!-- End paper abstract -->
+
+
+<section class="section is-compact">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Sampling Requirements</h2>
+      <div class="item">
+        <p>
+          We adopt the angular spectrum method (ASM) as it is a rigorous formulation of off-axis diffraction. An input field with an angular spectrum U has a diffraction field at distance z calculated by:
+        </p>
+        <img src="static/images/asm.png" class="eq-image"/>
+        <p>where<math xmlns="http://www.w3.org/1998/Math/MathML" style="color:rgba(0,0,0,255);color:rgb(0,0,0);font-size:13.00pt;"><mstyle><mrow><mtable columnspacing="0.1em" columnalign="left" displaystyle="true"><mtr><mtd><mrow><msub><mi>H</mi><mi>z</mi></msub></mrow></mtd></mtr></mtable></mrow></mstyle></math>is the propagation function.
+          <p>We propose the Least-Sampling ASM (LS-ASM) that minimizes the sampling requirements in both spatial and frequency domains and unifies the critical sampling rates for all types of input fields. </p>
+          <ol>
+          <li>With <i>linear phase compensation (LPC)</i>, we shift the frequency centers of off-axis wave fields to the origin using the Fourier transform properties;</li>
+          <li>With <i>virtual lens model</i>, we calculate a controllable region of band extension as a supplement to the phase gradient analysis;</li>
+          <li>With <i>joint component analysis</i>, we combine different components in the same domain to determine the correct sampling rate.</li>
+          </ol>
+        </p>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/lpc.png" alt="MY ALT TEXT" class="sec-image"/>
+            <div class="subtitle has-text-centered">
+              The Linear Phase Compensation (LPC) shifts the angular spectrum of the input field to the frequency center. 
+            </div>
+          </div>
+          <div class="item">
+            <img src="static/images/effective_bandwidth.png" alt="MY ALT TEXT" class="sec-image"/>
+            <div class="subtitle has-text-centered">
+              (a) Fourier transform interpreted as a virtual thin lens model. The green and yellow areas denote spherical and plane waves, respectively. (b) Inﬂuence of oversampling factor.
+            </div>
+          </div>
+          <div class="item">
+            <img src="static/images/combined-sampling.png" alt="MY ALT TEXT" class="sec-image"/>
+            <div class="subtitle has-text-centered">
+              Effect of combined sampling in frequency domain. From left to right, the 1st column is the zoomed view from the right ones. The 2nd ~ 4th ones are the phase of the angular spectrum of an off-axis converging spherical wave with LPC, the shifted transfer function, and the superposition, respectively.
+            </div>
+          </div>
+        </div>
+        <p></p>
+        <p>
+          We summarize the complete minimum sampling rates in both domains as:
+        </p>
+        <img src="static/images/spat.png" class="eq-image"/>
+        <img src="static/images/freq.png" class="eq-image"/>
+      </div>
+</section>
+
+<section class="section is-compact">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Simulation Results</h2>
+      <div class="item">
+        <p>
+          The results are compared against a baseline method (Shift-BEASM) and the ground truth (Rayleigh-Sommerfeld Integral).
+          Two cases of comparisons are considered:
+        </p>
+        <p>
+          In Case 1, where the samples in Shift-BEASM are set to achieve the same level of SNR as LS-ASM, LS-ASM consistently performs at a <b>remarkably short runtime</b> even <b>at large angles</b> (e.g., 20 degrees), outperforming the Shift-BEASM by over 35x.
+          <br>
+          In Case 2, where the samples in Shift-BEASM are set as the same rate as LS-ASM, the baseline yields incorrect results while ours consistantly performs well along all angles.
+        </p>
+        <p>
+          We further extend our discussions to complex and high-frequency input fields in the supplementary, and verify our theory using an example of diffuser modulation. 
+          More results, derivations, and proof are in supplementary.
+        </p>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/results.png" alt="MY ALT TEXT" class="sec-image-large"/>
+            <div class="subtitle has-text-centered">
+              (a) Visual results of the amplitude (first row) and phase (second row) of the complex PSF, and the amplitude for the angular spectrum (third row) of the input field at 3 degrees. The amplitude of the PSF and the angular spectrum is normalized by respective maxima. In the third row, the red dots denote the center of the angular spectrum. (b) SNR and runtime w.r.t. incident angles. (c) Sampling number w.r.t. incident angles. 
+            </div>
+          </div>
+          <div class="item">
+            <img src="static/images/uniform-diffuser.png" alt="MY ALT TEXT" class="sec-image-large"/>
+            <div class="subtitle has-text-centered">
+              Complex diffractive fields modulated by random diffusers with uniform distributions within each pixel.
+            </div>
+          </div>
+          <div class="item">
+            <img src="static/images/more1.png" alt="MY ALT TEXT" class="sec-image-large"/>
+            <div class="subtitle has-text-centered">
+              The amplitude of output field at large angles using LS-ASM, Zemax and RS.
+            </div>
+          </div>
+          <div class="item">
+            <img src="static/images/more2.png" alt="MY ALT TEXT" class="sec-image-large"/>
+            <div class="subtitle has-text-centered">
+              The phase of output field at large angles using LS-ASM, Zemax and RS.
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <img src="static/images/results.png" alt="MY ALT TEXT" class="abs-image"/>
+        <h2 class="subtitle has-text-centered">
+          (a) Visual results of the amplitude (first row) and phase (second row) of the complex PSF, and the amplitude for the angular spectrum (third row) of the input field at 3 degrees. The amplitude of the PSF and the angular spectrum is normalized by respective maxima. In the third row, the red dots denote the center of the angular spectrum. (b) SNR and runtime w.r.t. incident angles. (c) Sampling number w.r.t. incident angles. 
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/uniform-diffuser.png" alt="MY ALT TEXT" class="abs-image"/>
+        <h2 class="subtitle has-text-centered">
+          Complex diffractive fields modulated by random diffusers with uniform distributions within each pixel. Here the phase modulation is wrapped to [0, 2π] for visualization.
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<section class="section is-compact" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{Wei:23,
+        title   = {Modeling Off-Axis Diffraction with the Least-Sampling Angular Spectrum Method},
+        author  = {Wei, Haoyu and Liu, Xin and Hao, Xiang and Lam, Edmund Y. and Peng, Yifan},
+        journal = {Optica},
+        volume  = {10}, number = {7}, pages = {959--962},
+        month   = jul,
+        year    = {2023},
+        publisher = {Optica Publishing Group},
+        doi     = {10.1364/OPTICA.490223}
+      }
+    </code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+<!-- Related projects -->
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Related Projects</h2>
+    You may also be interested in related projects in deep optics:
+    <ul>
+      <li>Liu et al. Deep Optics Models, Optics Express 2022 (<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-20-36973&id=506502">link</a>)</li>
+      <li>Ikoma et al. Depth from Defocus, ICCP 2021 (<a href="https://ieeexplore.ieee.org/abstract/document/9466261/">link</a>)</li>
+      <li>Dun et al. Rotationally Symmetric Achromat, Optica 2020 (<a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-7-8-913&id=433999">link</a>)</li>
+      <li>Metzler et al. Deep Optics for HDR Imaging, CVPR 2020 (<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Metzler_Deep_Optics_for_Single-Shot_High-Dynamic-Range_Imaging_CVPR_2020_paper.html">link</a>)</li>
+      <li>Peng et al. Neural Holography, ACM ToG 2020 (<a href="https://dl.acm.org/doi/abs/10.1145/3414685.3417802">link</a>)</li>
+    </ul>
+  </div>
+</section>
+<!-- End related projects -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            This content is released under the Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC.) 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- Default Statcounter code for My Personal Website https://whywww.github.io/ -->
+<script type="text/javascript">
+  var sc_project=12906744; 
+  var sc_invisible=1; 
+  var sc_security="5b484c07"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/12906744/0/5b484c07/1/" alt="Web Analytics"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+  </body>
+  </html>

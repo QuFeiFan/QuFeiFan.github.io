@@ -29,6 +29,11 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
+  <link href="https://fonts.cdnfonts.com/css/linux-biolinum" rel="stylesheet">
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/linux-biolinum');
+  </style>
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
@@ -82,7 +87,7 @@
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://opg.optica.org/prj/fulltext.cfm?uri=prj-13-3-687&id=568606" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                        class="external-link button is-normal is-rounded button-color">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -157,22 +162,23 @@
         <p>
           We extend the vanilla SGD-ASM by modifying the propagation model and introduce the CITL framework to further improve imaging quality in off-axis configurations.
         </p>
+        <br>
 </div>
 
 
   <div style="text-align: center;">
-    <img src="static/images/algorithm0.jpg" alt="MY ALT TEXT" />
+    <img src="static/images/algorithm0.jpg" alt="MY ALT TEXT" class="sec-image-large" />
   </div>
-  <div class="subtitle has-text-centered is-size-6" style="max-width: 800px; margin: 0 auto;">
+  <div class="subtitle has-text-centered">
     Overview of tilt-SGD and tilt-CITL. (a) Hologram generation with the tilted plane setting. The initial phase hologram loaded on the SLM is a random phase to avoid getting stuck in local optimum during iteration. The reference plane is parallel to the SLM and set for propagation between two parallel planes. Two coordinate systems are used in the propagation model: one is the SLM coordinate, while the other one is the reference coordinate. Note that the tilted plane can either rotate the reference plane around the axis or the axis. (b) Camera-calibrated hologram optimization. The phase is represented by a green frame and the amplitude is represented by a black frame. The initial hologram loaded on the SLM is also a random phase. Similar to the pipeline of tilt-SGD, the reference plane field can be obtained through the propagation of the SLM field by ASM, and the tilted plane field is obtained by applying the transformation matrix into the reference plane field. Note that tilt-CITL needs to capture the virtual imagery in a dark environment.
   </div>
 
   <div style="height: 50px;"></div>
 
   <div style="text-align: center;">
-    <img src="static/images/algorithm1.jpg" alt="MY ALT TEXT"/>
+    <img src="static/images/algorithm1.jpg" alt="MY ALT TEXT" class="sec-image-large"/>
   </div>
-  <div class="subtitle has-text-centered is-size-6" style="max-width: 800px; margin: 0 auto;">
+  <div class="subtitle has-text-centered">
     Schematic diagram of the proposed HOE (a) fabrication and (b) reconstruction procedure. The (x, y, z) HOE coordinate is established to analyze the fabrication and reconstruction process better. (c) Fabricated HOE by a 532 nm laser. The HOE consists of a layer of photopolymer and a glass substrate. The glass substrate size is about 50mm * 40mm, and the thickness is 1 to 2 mm. (d) The viewpoint was formed by illuminating the HOE with a 532 nm laser.
   </div>
 
@@ -201,7 +207,7 @@
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/result2.jpeg" alt="MY ALT TEXT"/>
-        <div class="subtitle has-text-centered is-size-6">
+        <div class="subtitle has-text-centered">
           Comparison of results using tilt-SGD and tilt-CITL in the VR-mode holographic display. The 2D resolution of captured images is 1600 * 880. For each set (left to right): target images, phase patterns by tilt-SGD, captured results of tilt-SGD, phase patterns by tilt-CITL, and captured results of tilt-CITL, respectively. The target image is set at 10 cm away from the SLM plane. The PSNR metrics are reported. The phase patterns of full-color target image are created by superimposing holograms from three separate color channels. Note that these captured images are normalized for visualization purpose.
         </div>
       </div>
@@ -209,7 +215,7 @@
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/result3.jpeg" alt="MY ALT TEXT"/>
-        <div class="subtitle has-text-centered is-size-6">
+        <div class="subtitle has-text-centered">
           Acquired AR results at two focusing distances. (a) Near focus, with the camera focusing at the real object “Physical Cube.” (b) Far focus, with the camera focusing at the real object “Head Model.”
         </div>
      </div>
