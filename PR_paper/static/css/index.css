@@ -102,8 +102,10 @@ body {
 }
 
 .sec-image-large {
-    width: 70%;
+    max-width: 70%;
+    height: auto;
     margin: auto;
+    display: block;
 }
 
 .publication-video iframe {
